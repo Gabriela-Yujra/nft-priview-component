@@ -1,0 +1,90 @@
+:root {
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    --Very-dark-blue-main-BG: hsl(217, 54%, 11%);
+    --Very-dark-blue-card-BG: hsl(216, 50%, 16%);
+    --Very-dark-blue-line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+    --Name-status-font-size: 18px;
+}
+
+html,
+body {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+    background: var(--Very-dark-blue-main-BG);
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.priview-card {
+    background: var(--Very-dark-blue-card-BG);
+    border-radius: 20px;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.priview-card-top img {
+    max-width: 85%;
+    border-radius: 15px;
+}
+
+.priview-card-bottom__informacion img {
+    max-width: 10%;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+.priview-card-top {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.priview-card-bottom__datos-priview div span {
+    color: beige;
+}
+
+.priview-card-bottom__datos-priview p {
+    color: var(--Soft-blue);
+}
+
+.letras-color1 span {
+    color: var(--Cyan);
+}
+
+.letras-color2 span {
+    color: var(--White);
+}
+
+.priview-card-bottom__informacion span:nth-child(2) {
+    color: var(--Soft-blue);
+    margin-left: 10px;
+}
+
+.priview-card-bottom__informacion span:nth-child(3) {
+    color: var(--White);
+}
+
+.priview-card-bottom__datos {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+.priview-card-bottom {
+    padding: 20px;
+}
+
+.priview-card-bottom__informacion {
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    border-top: 1px solid var(--Very-dark-blue-line);
+}
