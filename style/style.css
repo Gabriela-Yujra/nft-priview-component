@@ -45,6 +45,7 @@ body {
     display: flex;
     justify-content: center;
     padding-top: 20px;
+    align-items: center;
 }
 
 .priview-card-bottom__datos-priview div span {
@@ -60,7 +61,7 @@ body {
 }
 
 .letras-color2 span {
-    color: var(--White);
+    color: var(--Soft-blue);
 }
 
 .priview-card-bottom__informacion span:nth-child(2) {
@@ -87,4 +88,25 @@ body {
     align-items: center;
     padding-top: 10px;
     border-top: 1px solid var(--Very-dark-blue-line);
+}
+
+.priview-card-top-eye {
+    position: absolute;
+    opacity: 0;
+}
+
+.priview-card-top img:hover {
+    filter: opacity(0.4) drop-shadow(0 0 0 var(--Cyan));
+}
+
+.priview-card-top img:hover~.priview-card-top-eye {
+    opacity: 1;
+}
+
+.priview-card-bottom__datos-priview div span:hover {
+    color: var(--Cyan);
+}
+
+.priview-card-bottom__informacion span:nth-child(3):hover {
+    color: var(--Cyan);
 }
