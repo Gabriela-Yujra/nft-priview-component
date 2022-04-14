@@ -20,7 +20,35 @@ body {
     display: flex;
     height: 100vh;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.button {
+    width: 150px;
+    border-radius: 5px;
+    border: 3px solid rgb(246, 246, 246);
+    color: var(--White);
+    background-color: var(--Very-dark-blackish-blue);
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.button:hover {
+    background: #a945c7;
+    box-shadow: 0 0 10px #a945c7, 0 0 40px #a945c7, 0 0 80px #a945c7;
+    transition-delay: 0s;
+}
+
+.button:disabled {
+    opacity: 0.5;
+}
+
+.contenedor {
+    margin: 10px 0;
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
 }
 
 .priview-card {
@@ -28,6 +56,7 @@ body {
     border-radius: 20px;
     width: 85%;
     margin: 0 auto;
+    margin-bottom: 15px;
 }
 
 .priview-card-top img {
@@ -71,6 +100,7 @@ body {
 
 .priview-card-bottom__informacion span:nth-child(3) {
     color: var(--White);
+    margin-left: 5px;
 }
 
 .priview-card-bottom__datos {
